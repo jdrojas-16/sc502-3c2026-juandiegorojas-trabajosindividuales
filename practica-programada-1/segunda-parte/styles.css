@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #263b3d;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    color: #a8dfc2;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #a8dfc2;
+}
+
+.bienvenida {
+    display: none;
+}
+
+.perfil {
+    max-width: 800px;
+    margin: 20px auto 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #ccc;
+}
+
+.doctor-info {
+    text-align: center;
+}
+
+.doctor-info h2 {
+    color: #419875;
+}
+
+.doctor-info h3 {
+    font-weight: normal;
+}
+
+.doctor-info p {
+    margin: 20px 0;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #2786c7;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #176496;
+}
+
+.resenas {
+    padding: 0 30px 30px;
+    text-align: center;
+}
+
+.resenas h2 {
+    color: #263b3d;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 280px;
+    min-height: 150px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 35px;
+    box-shadow: 0 3px 6px #ddd;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    font-size: 16px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+}
+
+.tarjeta small {
+    color: #888;
+}
+
+.contacto {
+    padding: 25px;
+    text-align: center;
+    background-color: #dcece6;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #263b3d;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .perfil {
+        margin: 20px 15px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+}
