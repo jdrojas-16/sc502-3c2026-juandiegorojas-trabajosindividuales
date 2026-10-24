@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Caso 1 - Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Profe acá hice el encabezado de la página -->
+    <header>
+        <h1>Registro de Estudiantes</h1>
+        <p>Estudio de Caso 1 - Ambiente Web</p>
+    </header>
+
+    <main>
+
+        <!-- Profe acá hice el formulario para agregar estudiantes -->
+        <section id="seccion-formulario">
+            <h2>Agregar estudiante</h2>
+
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ej: Ana">
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" placeholder="Ej: Gomez Vargas">
+
+                <label for="nota">Nota (0 a 100):</label>
+                <input type="number" id="nota" placeholder="Ej: 85">
+
+                <button type="submit">Agregar</button>
+            </form>
+
+            <!-- Acá se muestra el mensaje de error con JavaScript -->
+            <p id="mensaje-error"></p>
+        </section>
+
+        <!-- Profe acá hice la tabla con los 3 estudiantes precargados -->
+        <section id="seccion-tabla">
+            <h2>Lista de estudiantes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-estudiantes">
+                    <tr>
+                        <td>Maria</td>
+                        <td>Mora Perez</td>
+                        <td class="nota-alta">90</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Sibaja Lopez</td>
+                        <td class="nota-baja">60</td>
+                    </tr>
+                    <tr>
+                        <td>Marco</td>
+                        <td>Rojas Castro</td>
+                        <td>78</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Profe acá hice el resumen que se actualiza solo -->
+        <section id="seccion-resumen">
+            <h2>Resumen</h2>
+            <p>Estudiante con la mayor nota: <strong id="mayor-nota"></strong></p>
+            <p>Promedio de todas las notas: <strong id="promedio"></strong></p>
+            <p>Nota más baja: <strong id="menor-nota"></strong></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Hecho por Juan Diego Rojas - III Cuatrimestre 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
